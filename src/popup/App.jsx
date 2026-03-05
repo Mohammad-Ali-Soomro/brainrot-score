@@ -467,10 +467,10 @@ function SettingsTab() {
     <div style={{ padding: "16px", display: "flex", flexDirection: "column", gap: "20px", animation: "fadeIn 0.3s ease" }}>
       {/* API Key */}
       <div style={{ background: BG_CARD, borderRadius: "16px", padding: "18px" }}>
-        <div style={{ fontSize: "13px", fontWeight: 700, color: TEXT_PRIMARY, marginBottom: "12px" }}>🔑 Anthropic API Key</div>
+        <div style={{ fontSize: "13px", fontWeight: 700, color: TEXT_PRIMARY, marginBottom: "12px" }}>🔑 OpenRouter API Key</div>
         <input
           type="password"
-          placeholder={hasKey ? "••••••••••••••••••••••" : "sk-ant-..."}
+          placeholder={hasKey ? "••••••••••••••••••••••" : "sk-or-..."}
           value={apiKey}
           onChange={(e) => setApiKey(e.target.value)}
           style={{
@@ -493,7 +493,7 @@ function SettingsTab() {
           {keySaved ? "✓ Saved!" : "Save Key"}
         </button>
         <div style={{ fontSize: "11px", color: TEXT_DIM, marginTop: "8px" }}>
-          Stored locally in your browser. Never sent anywhere except Anthropic's API.
+          Stored locally in your browser. Never sent anywhere except OpenRouter's API.
         </div>
       </div>
 
