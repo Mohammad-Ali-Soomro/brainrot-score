@@ -4,7 +4,7 @@
   "description": "A Chrome extension that roasts your internet habits",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite build --watch",
     "build": "vite build",
     "preview": "vite preview"
   },
